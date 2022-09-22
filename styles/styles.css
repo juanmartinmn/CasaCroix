@@ -51,10 +51,37 @@ html, body {
 
 #grid0{
     background-color: aqua;
+    /* background-image: url('../img/content/creadores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#grid0 img{
+    height: 40vh;
 }
 
 #grid1{
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 50vh;
+}
+
+#grid1 #cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    border-style: solid;
+    border-width: 2px;
+    height: 40vh;
+    width: 80vw;
+
 }
 
 #grid2{
