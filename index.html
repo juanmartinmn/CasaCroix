@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" srcset=""></a>
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" srcset=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -55,14 +55,26 @@
         <div class="container" id="grid3">
           <div class="cuadro">
             <h2>Conocé nuestro menú</h2>
-            <a href=""><button>Ver menú</button></a>
+            <p>Mirá todas las opciones que ofrecemos</p>
+            <a href=""><button>Ver</button></a>
           </div>
         </div>
-        <div class="container" id="grid4"></div>
-        <div class="container" id="grid5"></div>
+        <div class="container" id="grid4">
+          <img src="./img/content/eventos.jpg" alt="">
+        </div>
+        <div class="container" id="grid5">
+          <div class="cuadro">
+            <h2>Eventos</h2>
+            <p>Celebra en Casa Croix</p>
+            <form action="">
+              <input type="number" id="invitados" placeholder="Cantidad de Invitados">
+              <input type="submit" id="eventos" value="Presupuestar">
+            </form>
+          </div>
+        </div>
     </section>
 
-    <section>
+    <section id="offCReservas">
       <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Reservas</h5>
@@ -74,7 +86,7 @@
             <input type="text" id="name" placeholder="">
             <label for="numero">Mesa para</label>
             <input type="number" id="mesa" placeholder="">
-            <label for="dia">El dia</label>
+            <label for="dia">El día</label>
             <input type="date" id="date">
             <div id="radioBtn">
               <div>
@@ -87,12 +99,10 @@
               </div>
             </div>
             <input type="submit" id='reserva' value="Enviar">
-
           </form>
         </div>
       </div>
     </section>
-
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>

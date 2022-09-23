@@ -14,3 +14,10 @@ document.querySelector('#reserva').addEventListener('click',function(){
 
     window.open(url)
 })
+
+document.querySelector('#eventos').addEventListener('click',function(){
+    let invitados = document.querySelector('#invitados').value;
+
+    const url = `https://api.whatsapp.com/send?phone=543815671888&text=Hola!, me gustaria presupuestar un evento privado en Casa Croix para ${invitados} personas. Muchas gracias!`;
+    window.open(url)
+})

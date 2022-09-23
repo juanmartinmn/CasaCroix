@@ -47,10 +47,11 @@ html, body {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-
-
 #grid0{
     height: 50vh;
+    background-image: url('../img/content/creadores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +88,15 @@ html, body {
     align-items: center;
 }
 
-#grid1 button{
+button{
+    background-color: #282828;
+    border-style: solid;
+    border-color: #282828;
+    border-width: 2px;
+    color: #E6E6E6;
+}
+
+input[type=submit]{
     background-color: #282828;
     border-style: solid;
     border-color: #282828;
@@ -97,6 +106,10 @@ html, body {
 
 #grid2{
     background-color: #282828;
+    background-image: url('../img/content/fondomenu-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -135,20 +148,36 @@ html, body {
     align-items: center;
 }
 
-#grid3 button{
-    background-color: #282828;
-    border-style: solid;
-    border-color: #282828;
-    border-width: 2px;
-    color: #E6E6E6;
+#grid4{
+    background-image: url('../img/content/eventos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#grid4{
-    background-color: blue;
+#grid4 img{
+    height: 30vh;
 }
 
 #grid5{
-    background-color: orange;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid5 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid5 form input{
+    margin: 5px;
 }
 
 .offcanvas-body form{
