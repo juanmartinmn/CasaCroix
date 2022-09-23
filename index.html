@@ -44,7 +44,7 @@
             <p>Viernes <b>12:00 am - 02:00 am</b></p>
             <p>Sabado <b>12:00 am - 02:00 am</b></p>
             <p>Domingo <b>12:00 am - 18:00 pm</b></p>
-            <a href=""><button>Reservas</button></a>
+            <a class="btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><button>Reservas</button></a>
           </div>
         </div>
         <div class="container" id="grid2">
@@ -62,7 +62,39 @@
         <div class="container" id="grid5"></div>
     </section>
 
+    <section>
+      <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Reservas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form action="">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="name" placeholder="">
+            <label for="numero">Mesa para</label>
+            <input type="number" id="mesa" placeholder="">
+            <label for="dia">El dia</label>
+            <input type="date" id="date">
+            <div id="radioBtn">
+              <div>
+                <input type="radio" name="hora" id="hora" value="almorzar">
+                <label for="almuerzo">Almuerzo</label>
+              </div>
+              <div>
+                <input type="radio" name="hora" id="hora" value="cenar">
+                <label for="cena">Cena</label>
+              </div>
+            </div>
+            <input type="submit" id='submit' value="Enviar">
+
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

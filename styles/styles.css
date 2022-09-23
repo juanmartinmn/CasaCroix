@@ -150,3 +150,20 @@ html, body {
 #grid5{
     background-color: orange;
 }
+
+.offcanvas-body form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.offcanvas-body form #radioBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offcanvas-body input{
+    margin: 10px 0 10px 0;
+}
