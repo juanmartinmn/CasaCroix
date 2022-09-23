@@ -167,3 +167,11 @@ html, body {
 .offcanvas-body input{
     margin: 10px 0 10px 0;
 }
+
+.offcanvas-body form #reserva{
+    background-color: #282828;
+    border-style: solid;
+    border-color: #282828;
+    border-width: 2px;
+    color: #E6E6E6;
+}
