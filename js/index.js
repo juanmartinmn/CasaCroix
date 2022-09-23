@@ -16,8 +16,27 @@ document.querySelector('#reserva').addEventListener('click',function(){
 })
 
 document.querySelector('#eventos').addEventListener('click',function(){
-    let invitados = document.querySelector('#invitados').value;
+    let nombre = document.querySelector('#nombre').value;
+    let tipo = document.querySelector('#tipoEvento').value;
+    let mayores = document.querySelector('#mayores').value;
+    let menores = document.querySelector('#menores').value;
+    let invitados = parseInt(mayores) + parseInt(menores);
+    let fecha = document.querySelector('#fecha').value;
+    let hora = document.querySelector('#horario').value;
+    let tipoEv = document.querySelector('#tipoEv').value;
+    let excepciones = document.querySelector('#excepciones').value;
+    let otros = document.querySelector('#otros').value;
 
-    const url = `https://api.whatsapp.com/send?phone=543815671888&text=Hola!, me gustaria presupuestar un evento privado en Casa Croix para ${invitados} personas. Muchas gracias!`;
-    window.open(url)
+
+    let array = fecha.split('-');
+    year = array[0];
+    month = array[1];
+    day = array[2];
+    let date = `${day}/${month}/${year}`;
+
+
+
+    const link = `https://api.whatsapp.com/send?phone=543815671888&text=Hola!, me gustaria presupuestar un evento en Casa Croix %0A Nombre Completo: ${nombre}%0A Tipo de Evento: ${tipo}%0A Cantidad de Invitados: ${invitados} (Mayores: ${mayores} Menores: ${menores})%0A Fecha: ${date}%0A Hora: ${hora}%0A ${tipoEv}%0A Celiacos, Vegetarianos y Veganos: ${excepciones}%0A Otros: ${otros}%0AMuchas gracias!`;
+                
+    window.open(link);
 })

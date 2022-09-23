@@ -66,10 +66,7 @@
           <div class="cuadro">
             <h2>Eventos</h2>
             <p>Celebra en Casa Croix</p>
-            <form action="">
-              <input type="number" id="invitados" placeholder="Cantidad de Invitados">
-              <input type="submit" id="eventos" value="Presupuestar">
-            </form>
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#EventoPrivado" aria-controls="offcanvasResponsive">Presupuestar</button>
           </div>
         </div>
     </section>
@@ -88,7 +85,7 @@
             <input type="number" id="mesa" placeholder="">
             <label for="dia">El día</label>
             <input type="date" id="date">
-            <div id="radioBtn">
+            <div class="radioBtn">
               <div>
                 <input type="radio" name="hora" id="hora" value="almorzar">
                 <label for="almuerzo">Almuerzo</label>
@@ -100,6 +97,56 @@
             </div>
             <input type="submit" id='reserva' value="Enviar">
           </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="offCEventos">
+      <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="EventoPrivado" aria-labelledby="offcanvasResponsiveLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Eventos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#EventoPrivado" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form action="">
+            <label for="nombre"><b>Nombre y Apellido</b></label>
+            <input type="text" id="nombre" placeholder="">
+            <label for="tipo"><b>Tipo de Evento</b></label>
+            <input type="text" name="" id="tipoEvento">
+            <label for=""><b>Invitados</b></label>
+            <label for="numero">Mayores</label>
+            <input type="number" id="mayores" placeholder="">
+            <label for="numero">Menores</label>
+            <input type="number" id="menores" placeholder="">
+            <label for="dia"><b>Fecha</b></label>
+            <input type="date" id="fecha">
+            <label for="hora"><b>Hora</b></label>
+            <input type="time" name="" id="horario">
+            <div class="radioBtn">
+              <div>
+                <input type="radio" name="tipoEv" id="tipoEv" value="Evento Privado">
+                <label for="">Evento Privado</label>
+              </div>
+              <div>
+                <input type="radio" name="tipoEv" id="tipoEv" value="Festejo en Restaurante">
+                <label for="">Festejo en Restaurante</label>
+              </div>
+            </div>
+            <label for=""><b>Celiacos, Veganos y Vegetarianos</b></label>
+            <div class="radioBtn">
+              <div>
+                <input type="radio" name="excepciones" id="excepciones" value="Si">
+                <label for="">Si</label>
+              </div>
+              <div>
+                <input type="radio" name="excepciones" id="excepciones" value="No">
+                <label for="">No</label>
+              </div>
+            </div>
+            <label for=""><b>Otros</b></label>
+            <input type="text" id="otros">
+
+            <input type="submit" id='eventos' value="Enviar">
         </div>
       </div>
     </section>
